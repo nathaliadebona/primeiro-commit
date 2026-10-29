@@ -25,6 +25,7 @@ body {
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
+    white-space: nowrap;
     font-family: inherit;
     font-weight: 600;
     text-decoration: none;
@@ -40,4 +41,38 @@ body {
 .btn:hover {
     background-color: var(--cor-principal-escura);
     box-shadow: 0 0 1.5rem rgba(109, 74, 255, 0.5);
+}
+
+nav {
+    display: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--cor-fundo);
+    box-shadow: 0 0.5rem 0.5rem rgba(43, 40, 51, 0.08);
+}
+
+.logo {
+    font-family: var(--fonte-mono);
+    font-weight: 600;
+    color: var(--cor-principal-escura);
+}
+
+header .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+}
+
+@media (min-width: 48rem) {
+    nav {
+        display: block;
+    }
 }
