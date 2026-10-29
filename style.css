@@ -5,6 +5,8 @@
     --cor-principal-escura: #5A38E0;
     --cor-detalhe: #7FE5C0;
     --cor-detalhe-escuro: #1E9E75;
+    --cor-editor: #1E1B2E;
+    --cor-editor-barra: #2A2640;
 
     --fonte-corpo: 'Plus Jakarta Sans', sans-serif;
     --fonte-mono: 'JetBrains Mono', monospace;
@@ -164,6 +166,46 @@ h1 {
     margin-bottom: 0.5rem;
     font-size: 1.25rem;
     line-height: 1.2;
+}
+
+.editor {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background-color: var(--cor-editor);
+    box-shadow: 0 0.5rem 1.5rem rgba(30, 27, 46, 0.25);
+}
+
+.editor-barra {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--cor-editor-barra);
+}
+
+.bolinha-janela {
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+}
+
+.bolinha-janela:nth-child(1) {
+    background-color: #FF5F57;
+}
+
+.bolinha-janela:nth-child(2) {
+    background-color: #FEBC2E;
+}
+
+.bolinha-janela:nth-child(3) {
+    background-color: #28C840;
+}
+
+.editor-arquivo {
+    font-family: var(--fonte-mono);
+    font-size: 0.8rem;
+    color: #A9A5BD;
 }
 
 @media (min-width: 48rem) {
