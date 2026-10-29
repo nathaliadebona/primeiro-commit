@@ -1,0 +1,23 @@
+:root {
+    --cor-fundo: #FAF8F5;
+    --cor-texto: #2B2833;
+    --cor-principal: #6D4AFF;
+    --cor-principal-escura: #5A38E0;
+    --cor-detalhe: #7FE5C0;
+
+    --fonte-corpo: 'Plus Jakarta Sans', sans-serif;
+    --fonte-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-corpo);
+    color: var(--cor-texto);
+    line-height: 1.5;
+    background-color: var(--cor-fundo);
+}
