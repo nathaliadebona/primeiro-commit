@@ -75,4 +75,21 @@ header .btn {
     nav {
         display: block;
     }
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-weight: 500;
+        color: var(--cor-texto);
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: var(--cor-principal);
+    }
 }
