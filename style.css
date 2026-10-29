@@ -71,6 +71,37 @@ header .btn {
     font-size: 0.8rem;
 }
 
+#hero {
+    padding: 3rem 1.2rem;
+    text-align: center;
+}
+
+.etiqueta {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0.8rem;
+    font-family: var(--fonte-mono);
+    font-size: 0.875rem;
+    color: var(--cor-texto);
+    border-radius: 2rem;
+    background-color: var(--cor-detalhe);
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+#hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+#hero a {
+    margin-bottom: 1rem;
+}
+
 @media (min-width: 48rem) {
     nav {
         display: block;
