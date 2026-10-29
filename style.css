@@ -208,6 +208,32 @@ h1 {
     color: #A9A5BD;
 }
 
+.etapas {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1rem;
+    list-style: none;
+    color: #E8E6F2;
+}
+
+.etapa-numero {
+    display: block;
+    font-family: var(--fonte-mono);
+    font-size: 0.9rem;
+    color: var(--cor-detalhe);
+}
+
+.etapas h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    color: var(--cor-fundo);
+}
+
+.etapas p {
+    color: #A9A5BD;
+}
+
 @media (min-width: 48rem) {
     nav {
         display: block;
