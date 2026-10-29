@@ -4,6 +4,7 @@
     --cor-principal: #6D4AFF;
     --cor-principal-escura: #5A38E0;
     --cor-detalhe: #7FE5C0;
+    --cor-detalhe-escuro: #1E9E75;
 
     --fonte-corpo: 'Plus Jakarta Sans', sans-serif;
     --fonte-mono: 'JetBrains Mono', monospace;
@@ -94,12 +95,26 @@ h1 {
 }
 
 #hero p {
-    font-size: 1.1rem;
     margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
 #hero a {
     margin-bottom: 1rem;
+}
+
+.confianca {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+.confianca i {
+    margin-right: 0.3rem;
+    color: var(--cor-detalhe-escuro);
 }
 
 @media (min-width: 48rem) {
