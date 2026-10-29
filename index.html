@@ -230,7 +230,33 @@
         </section>
 
         <section id="inscricao">
-            <h2>Inscrição</h2>
+            <h2>Garanta sua vaga na próxima turma</h2>
+
+            <p>Preencha os dados abaixo e entre na lista de espera. Avisamos assim que as inscrições abrirem.</p>
+
+            <form class="formulario" novalidate>
+                <div class="campo">
+                    <label for="nome">Seu nome</label>
+                    <input type="text" name="nome" id="nome">
+                    <span class="erro" hidden></span>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Seu melhor e-mail</label>
+                    <input type="email" name="email" id="email">
+                    <span class="erro" hidden></span>
+                </div>
+
+                <div class="campo">
+                    <label for="desafio">Qual seu maior desafio hoje?</label>
+                    <textarea name="desafio" id="desafio"></textarea>
+                    <span class="erro" hidden></span>
+                </div>
+
+                <button type="submit" class="btn">Entrar na lista de espera</button>
+            </form>
+            
+            <p class="mensagem-sucesso" hidden></p>
         </section>
     </main>
 
