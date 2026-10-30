@@ -291,6 +291,8 @@ h1 {
 
 .plano {
     position: relative;
+    display: flex;
+    flex-direction: column;
     padding: 1.5rem;
     border: 0.0625rem solid rgba(43, 40, 51, 0.15);
     border-radius: 0.5rem;
@@ -307,6 +309,7 @@ h1 {
 .plano-lista {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     gap: 0.5rem;
     margin-bottom: 1.2rem;
     list-style: none;
@@ -493,7 +496,7 @@ footer a {
         padding-right: 2rem;
         padding-left: 2rem;
     }
-    
+
     nav {
         display: block;
     }
@@ -519,11 +522,6 @@ footer a {
         padding: 5rem 2rem;
     }
 
-    footer {
-        padding-right: 2rem;
-        padding-left: 2rem;
-    }
-
     h1 {
         font-size: 3rem;
     }
@@ -534,5 +532,16 @@ footer a {
 
     #hero {
         padding: 5rem 2rem;
+    }
+
+    .planos-lista {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 50rem;
+    }
+
+    footer {
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
 }
