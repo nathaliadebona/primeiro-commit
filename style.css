@@ -358,6 +358,19 @@ h1 {
     display: none; 
 }
 
+.faq-item summary::after {
+    content: '+';
+    font-family: var(--fonte-mono);
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--cor-principal);
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+    transform: rotate(45deg);
+}
+
 .faq-item p {
     margin-top: 1rem;
     color: rgba(43, 40, 51, 0.8);
