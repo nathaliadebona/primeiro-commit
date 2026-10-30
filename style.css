@@ -545,3 +545,15 @@ footer a {
         padding-left: 2rem;
     }
 }
+
+@media (min-width: 64rem) {  
+    .cards, .depoimentos-lista {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .card, .depoimento {
+        padding: 1.5rem;
+    }
+}
