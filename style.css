@@ -1,5 +1,6 @@
 :root {
     --cor-fundo: #FAF8F5;
+    --cor-fundo-alt: #F1EDE6;
     --cor-texto: #2B2833;
     --cor-principal: #6D4AFF;
     --cor-principal-escura: #5A38E0;
@@ -7,6 +8,7 @@
     --cor-detalhe-escuro: #1E9E75;
     --cor-editor: #1E1B2E;
     --cor-editor-barra: #2A2640;
+    --cor-card: #FFFFFF;
 
     --fonte-corpo: 'Plus Jakarta Sans', sans-serif;
     --fonte-mono: 'JetBrains Mono', monospace;
@@ -232,6 +234,49 @@ h1 {
 
 .etapas p {
     color: #A9A5BD;
+}
+
+#depoimentos {
+    background-color: var(--cor-fundo-alt);
+}
+
+.depoimentos-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.depoimento {
+    padding: 1rem;
+    border: 0.0625rem solid rgba(43, 40, 51, 0.15);
+    border-radius: 0.5rem;
+    background-color: var(--cor-card);
+    box-shadow: 0 0.25rem 1rem rgba(43, 40, 51, 0.1);
+}
+
+.depoimento blockquote::before {
+    content: '“';
+    display: block;
+    margin-bottom: -0.5rem;
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--cor-detalhe-escuro);
+}
+
+.depoimento p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.depoimento strong {
+    display: block;
+    color: var(--cor-principal-escura);
+}
+
+.depoimento span {
+    display: block;
+    font-size: 0.8rem;
 }
 
 @media (min-width: 48rem) {
