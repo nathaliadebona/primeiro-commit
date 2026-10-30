@@ -453,6 +453,26 @@ textarea.valido {
     background-color: #E3F8F0;
 }
 
+footer {
+    padding: 2rem;
+    text-align: center;
+    color: #A9A5BD;
+    background-color: var(--cor-editor);
+}
+
+footer p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+footer .logo {
+    color: var(--cor-detalhe);
+}
+
+footer a {
+    color: var(--cor-detalhe);
+}
+
 @media (min-width: 48rem) {
     nav {
         display: block;
