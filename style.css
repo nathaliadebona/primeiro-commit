@@ -489,6 +489,11 @@ footer a {
 }
 
 @media (min-width: 48rem) {
+    header {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    
     nav {
         display: block;
     }
@@ -508,5 +513,26 @@ footer a {
 
     nav a:hover {
         color: var(--cor-principal);
+    }
+
+    main section {
+        padding: 5rem 2rem;
+    }
+
+    footer {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    section h2 {
+        font-size: 2.25rem;
+    }
+
+    #hero {
+        padding: 5rem 2rem;
     }
 }
