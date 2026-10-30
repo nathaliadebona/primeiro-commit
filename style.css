@@ -409,6 +409,7 @@ input, textarea {
     border: 0.0625rem solid rgba(43, 40, 51, 0.15);
     border-radius: 0.5rem;
     background-color: var(--cor-fundo);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 textarea {
@@ -418,6 +419,38 @@ textarea {
 
 .formulario .btn {
     width: 100%;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--cor-principal);
+    box-shadow: 0 0 0 0.2rem rgba(109, 74, 255, 0.2);
+}
+
+input.invalido,
+textarea.invalido {
+    border-color: #C0392B;
+}
+
+input.valido,
+textarea.valido {
+    border-color: var(--cor-detalhe-escuro);
+}
+
+.erro {
+    font-size: 0.8rem;
+    color: #C0392B;
+}
+
+.mensagem-sucesso {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    text-align: center;
+    font-weight: 600;
+    color: #14664A;
+    border-radius: 0.5rem;
+    background-color: #E3F8F0;
 }
 
 @media (min-width: 48rem) {
