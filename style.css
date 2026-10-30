@@ -20,6 +20,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
 body {
     font-family: var(--fonte-corpo);
     color: var(--cor-texto);
