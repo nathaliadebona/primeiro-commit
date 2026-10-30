@@ -332,6 +332,37 @@ h1 {
     background-color: var(--cor-detalhe);
 }
 
+.faq-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.faq-item {
+    padding: 1rem;
+    border: 0.0625rem solid rgba(43, 40, 51, 0.15);
+    border-radius: 0.5rem;
+    background-color: var(--cor-card);
+}
+
+.faq-item summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.faq-item summary::-webkit-details-marker { 
+    display: none; 
+}
+
+.faq-item p {
+    margin-top: 1rem;
+    color: rgba(43, 40, 51, 0.8);
+}
+
 @media (min-width: 48rem) {
     nav {
         display: block;
