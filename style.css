@@ -283,10 +283,11 @@ h1 {
 .planos-lista {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .plano {
+    position: relative;
     padding: 1.5rem;
     border: 0.0625rem solid rgba(43, 40, 51, 0.15);
     border-radius: 0.5rem;
@@ -311,6 +312,24 @@ h1 {
 .plano .btn {
     display: block;
     text-align: center;
+}
+
+.destaque {
+    border: 0.125rem solid var(--cor-principal);
+    box-shadow: 0 0.5rem 2rem rgba(109, 74, 255, 0.25);
+}
+
+.plano-selo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    font-family: var(--fonte-mono);
+    font-size: 0.9rem;
+    border-radius: 10rem;
+    background-color: var(--cor-detalhe);
 }
 
 @media (min-width: 48rem) {
