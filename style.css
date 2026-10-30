@@ -228,16 +228,17 @@ h1 {
     color: #E8E6F2;
 }
 
-.etapa-numero {
+.etapa-hash {
     display: block;
     font-family: var(--fonte-mono);
     font-size: 0.9rem;
-    color: var(--cor-detalhe);
+    color: #FEBC2E;
 }
 
 .etapas h3 {
     margin-bottom: 0.8rem;
-    font-size: 1.2rem;
+    font-family: var(--fonte-mono);
+    font-size: 1rem;
     color: var(--cor-fundo);
 }
 
