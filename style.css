@@ -261,10 +261,19 @@ h1 {
 .etapas {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 2rem;
     padding: 1rem;
     list-style: none;
     color: #E8E6F2;
+}
+
+.etapas li {
+    padding-bottom: 1rem;
+    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.15);
+}
+
+.etapas li:last-child {
+    border-bottom: none;
 }
 
 .etapa-hash {
