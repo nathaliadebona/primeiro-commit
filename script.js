@@ -1,6 +1,6 @@
 const itens = document.querySelectorAll('.faq-item');
 const form = document.querySelector('.formulario');
-
+const mensagemSucesso = document.querySelector('.mensagem-sucesso');
 const nome = document.getElementById('nome');
 const email = document.getElementById('email');
 const desafio = document.getElementById('desafio');
@@ -42,6 +42,7 @@ itens.forEach((item) => {
 // Formulário
 form.addEventListener('submit', (evento) => {
     evento.preventDefault();
+    mensagemSucesso.hidden = true;
 
     let formularioValido = true;
 
@@ -67,5 +68,16 @@ form.addEventListener('submit', (evento) => {
         formularioValido = false;
     } else {
         mostrarValido(desafio);
+    }
+
+    if (formularioValido) {
+        mensagemSucesso.textContent = `✓ commit realizado: ${nome.value} está na lista!`;
+        mensagemSucesso.hidden = false;
+
+        form.reset();
+
+        [nome, email, desafio].forEach((campo) => {
+            campo.classList.remove('valido');
+        });
     }
 });
