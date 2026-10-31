@@ -5,6 +5,8 @@ const nome = document.getElementById('nome');
 const email = document.getElementById('email');
 const desafio = document.getElementById('desafio');
 
+const padraoEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 // Erro formulário
 function mostrarErro(campo, mensagem) {
     campo.classList.add('invalido');
@@ -41,5 +43,29 @@ itens.forEach((item) => {
 form.addEventListener('submit', (evento) => {
     evento.preventDefault();
 
-    mostrarErro(nome, 'Teste de erro');
+    let formularioValido = true;
+
+    if (nome.value.trim() === '') {
+        mostrarErro(nome, 'Digite seu nome.');
+        formularioValido = false;
+    } else {
+        mostrarValido(nome);
+    }
+
+    if (email.value.trim() === '') {
+        mostrarErro(email, 'Digite seu e-mail.');
+        formularioValido = false;
+    } else if (!padraoEmail.test(email.value.trim())) {
+        mostrarErro(email, 'Digite um e-mail válido.');
+        formularioValido = false;
+    } else {
+        mostrarValido(email);
+    }
+
+    if (desafio.value.trim() === '') {
+        mostrarErro(desafio, 'Conte qual é o seu maior desafio.');
+        formularioValido = false;
+    } else {
+        mostrarValido(desafio);
+    }
 });
