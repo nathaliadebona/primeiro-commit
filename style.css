@@ -551,27 +551,6 @@ footer a {
         padding-left: 2rem;
     }
 
-    nav {
-        display: block;
-    }
-
-    nav ul {
-        display: flex;
-        gap: 1rem;
-        list-style: none;
-    }
-
-    nav a {
-        text-decoration: none;
-        font-weight: 500;
-        color: var(--cor-texto);
-        transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-        color: var(--cor-principal);
-    }
-
     main section {
         padding: 5rem 2rem;
     }
@@ -601,6 +580,27 @@ footer a {
 }
 
 @media (min-width: 64rem) {  
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-weight: 500;
+        color: var(--cor-texto);
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: var(--cor-principal);
+    }
+    
     .cards, .depoimentos-lista {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
