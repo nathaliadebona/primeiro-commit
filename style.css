@@ -187,6 +187,44 @@ h1 {
     box-shadow: 0 0.5rem 1.5rem rgba(30, 27, 46, 0.25);
 }
 
+.terminal-hero {
+    max-width: 32rem;
+    margin: 2rem auto 0;
+    text-align: left;
+}
+
+.terminal-corpo {
+    min-height: 5rem;
+    padding: 1rem;
+    font-family: var(--fonte-mono);
+    font-size: 0.9rem;
+    color: #E8E6F2;
+}
+
+.terminal-prompt {
+    color: var(--cor-detalhe);
+}
+
+.terminal-saida {
+    margin-top: 0.5rem;
+    color: #A9A5BD;
+}
+
+.cursor {
+    display: inline-block;
+    width: 0.5rem;
+    height: 1rem;
+    background-color: var(--cor-detalhe);
+    vertical-align: -0.15rem;
+    animation: piscar 1s steps(1) infinite;
+}
+
+@keyframes piscar {
+    50% {
+        opacity: 0;
+    }
+}
+
 .editor-barra {
     display: flex;
     align-items: center;
@@ -571,5 +609,11 @@ footer a {
 
     .card, .depoimento {
         padding: 1.5rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cursor {
+        animation: none;
     }
 }
