@@ -367,6 +367,7 @@ h1 {
 
 .destaque {
     border: 0.125rem solid var(--cor-principal);
+    background: linear-gradient(135deg, #E3F8F0, #ECE7FF);
     box-shadow: 0 0.5rem 2rem rgba(109, 74, 255, 0.25);
 }
 
@@ -600,7 +601,7 @@ footer a {
     nav a:hover {
         color: var(--cor-principal);
     }
-    
+
     .cards, .depoimentos-lista {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
