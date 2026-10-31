@@ -464,11 +464,20 @@ textarea.valido {
     max-width: 32rem;
     margin-top: 1rem;
     padding: 0.8rem;
-    text-align: center;
+    text-align: left;
+    font-family: var(--fonte-mono);
+    font-size: 0.9rem;
     font-weight: 600;
-    color: #14664A;
+    color: var(--cor-detalhe);
     border-radius: 0.5rem;
-    background-color: #E3F8F0;
+    background-color: var(--cor-editor);
+}
+
+.mensagem-sucesso::before {
+    content: '$ git commit';
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #A9A5BD;
 }
 
 footer {
