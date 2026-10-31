@@ -5,6 +5,25 @@ const nome = document.getElementById('nome');
 const email = document.getElementById('email');
 const desafio = document.getElementById('desafio');
 
+// Erro formulário
+function mostrarErro(campo, mensagem) {
+    campo.classList.add('invalido');
+    campo.classList.remove('valido');
+
+    const erro = campo.nextElementSibling;
+    erro.textContent = mensagem;
+    erro.hidden = false;
+}
+
+function mostrarValido(campo) {
+    campo.classList.add('valido');
+    campo.classList.remove('invalido');
+
+    const erro = campo.nextElementSibling;
+    erro.textContent = '';
+    erro.hidden = true;
+}
+
 // FAQ
 itens.forEach((item) => {
     item.addEventListener('toggle', () => {
@@ -21,6 +40,6 @@ itens.forEach((item) => {
 // Formulário
 form.addEventListener('submit', (evento) => {
     evento.preventDefault();
-    
-    console.log('enviou');
+
+    mostrarErro(nome, 'Teste de erro');
 });
