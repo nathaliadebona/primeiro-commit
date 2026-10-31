@@ -4,8 +4,13 @@ const mensagemSucesso = document.querySelector('.mensagem-sucesso');
 const nome = document.getElementById('nome');
 const email = document.getElementById('email');
 const desafio = document.getElementById('desafio');
+const comando = document.getElementById('comando');
+const saida = document.getElementById('saida');
 
 const padraoEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+const texto = 'git commit -m "meu primeiro commit"';
+let posicao = 0;
 
 // Erro formulário
 function mostrarErro(campo, mensagem) {
@@ -25,6 +30,19 @@ function mostrarValido(campo) {
     erro.textContent = '';
     erro.hidden = true;
 }
+
+// Terminal do hero
+function digitar() {
+    if (posicao < texto.length) {
+        comando.textContent += texto[posicao];
+        posicao++;
+        setTimeout(digitar, 80);
+    } else {
+        saida.hidden = false;
+    }
+}
+
+setTimeout(digitar, 600);
 
 // FAQ
 itens.forEach((item) => {
